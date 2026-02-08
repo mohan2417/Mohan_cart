@@ -4,7 +4,7 @@ import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Home from './Pages/Home';
 import ProDetails from './Pages/Productdetails';
-import {toast, ToastContainer} from 'react-toastify'
+import {ToastContainer} from 'react-toastify'
 import {BrowserRouter as Router , Routes , Route} from 'react-router-dom';   
 import Cart from './Pages/Cart';
 export default function App() {
@@ -14,6 +14,7 @@ export default function App() {
         <Router>
             <div>
                 <ToastContainer theme='dark'/>
+
             <Header cartItems ={cartItems}/>
             <Routes>
                 <Route path="/" element={<Home/>} />                            
